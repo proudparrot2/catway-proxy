@@ -2,7 +2,6 @@ import { Route, Router } from '@solidjs/router'
 import { render } from 'solid-js/web'
 import store from 'store2'
 import { handleDebug } from './lib/debug'
-import { analytics } from './lib/analytics'
 
 import Layout from './layout'
 import FAQ from './routes/faq'
@@ -13,8 +12,6 @@ import Settings from './routes/settings'
 import Shortcuts from './routes/shortcuts'
 import Bookmarks from './routes/bookmarks'
 import './style.css'
-
-analytics.trackPageview()
 
 store.set(
   'tab',
